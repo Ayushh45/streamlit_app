@@ -18,7 +18,11 @@ from xgboost import XGBClassifier
 # In[2]:
 
 
-df = pd.read_csv("/content/combined dataset.csv")
+import os
+
+file_path = os.path.join(os.path.dirname(__file__), "combined dataset.csv")
+df = pd.read_csv(file_path)
+
 
 
 # In[3]:
